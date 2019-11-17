@@ -4,14 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const getCurrentDate = () => {
-    const date = new Date();
-    return date.toDateString();
-}
-
-
-const greeting = <h1>Hello World! Current Date {getCurrentDate()}</h1>;
-
-ReactDOM.render(greeting, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.unregister();
